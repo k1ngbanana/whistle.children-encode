@@ -60,7 +60,7 @@ function decrypt(cryptoKey, ciphertext) {
   if (!cryptoKey) return ciphertext;
   ciphertext = ciphertext.replace(/\s/g, "");
   const key = crypto.enc.Hex.parse(
-    cryptoKey.substring(0, 10) + cryptoKey.substring(16, cryptoKey.length)
+    cryptoKey.substring(0, 8) + cryptoKey.substring(14, cryptoKey.length)
   );
   const wordArray = crypto.AES.decrypt(ciphertext, key, {
     mode: crypto.mode.ECB,

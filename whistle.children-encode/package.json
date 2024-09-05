@@ -1,12 +1,12 @@
 {
   "name": "whistle.children-encode",
-  "version": "0.0.0",
+  "version": "0.0.3",
   "description": "儿保解密请求插件",
   "author": "banana",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/k1ngbanana/whistle.children-encode"
+    "url": "https://github.com/k1ngbanana/whistle.children-encode/tree/dev/whistle.children-encode"
   },
   "main": "index.js",
   "keywords": [

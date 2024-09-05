@@ -33,7 +33,7 @@ module.exports = (server, options) => {
 
 function encrypt(cryptoKey, data) {
   const key = crypto.enc.Hex.parse(
-    cryptoKey.substring(0, 10) + cryptoKey.substring(16, cryptoKey.length)
+    cryptoKey.substring(0, 8) + cryptoKey.substring(14, cryptoKey.length)
   );
   const message = crypto.enc.Utf8.parse(JSON.stringify(data));
 
